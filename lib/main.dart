@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splash/src/pages/sphash_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,20 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Store App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('store app'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.home),
-        ),
-      ),
+      home: const SplashScreen(), // carga primero el splash
     );
   }
 }
