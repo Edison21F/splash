@@ -5,10 +5,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Home',
-        style: TextStyle(fontSize: 24),
+    return  Center(
+      child: ClipOval(
+        child: Image.asset(
+          'assets/images2.jpeg', 
+          width: 120,
+          height: 120,
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }

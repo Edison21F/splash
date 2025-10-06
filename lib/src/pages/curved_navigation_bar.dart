@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:splash/src/pages/perfil_screen.dart';
 import 'home_screen.dart';
 import 'favorite_screen.dart';
 import 'settings_screen.dart';
@@ -18,6 +19,7 @@ class _CurvedNavigationBarPageState extends State<CurvedNavigationBarPage> {
     const HomeScreen(),
     const FavoriteScreen(),
     const SettingsScreen(),
+    const PerfilScreen()
   ];
 
   @override
@@ -37,6 +39,7 @@ class _CurvedNavigationBarPageState extends State<CurvedNavigationBarPage> {
           Icon(Icons.home, size: 30, color: Colors.white),
           Icon(Icons.favorite, size: 30, color: Colors.white),
           Icon(Icons.settings, size: 30, color: Colors.white),
+          Icon(Icons.person, size: 30, color: Colors.white),
         ],
         onTap: (index) {
           setState(() {
